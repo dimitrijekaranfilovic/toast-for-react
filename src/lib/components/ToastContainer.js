@@ -3,19 +3,22 @@ import Toast from "./Toast";
 import "./toast.css";
 import PropTypes from "prop-types";
 
-const ToastContainer = ({ toastStateList, stack, direction }) => {
-  const justify =
-    stack === "end" || stack === undefined ? "flex-end" : "flex-start";
-
-  const flDirecyion =
-    direction === "column" || direction === undefined ? "column" : "row";
+const ToastContainer = ({
+  toastStateList,
+  justify = "flex-end",
+  direction = "column",
+  side = "right",
+  head = "bottom",
+}) => {
   return (
     <div
       className="toast-container"
       style={{
         display: "flex",
         justifyContent: justify,
-        flexDirection: flDirecyion,
+        flexDirection: direction,
+        [side]: 0,
+        [head]: 0,
       }}
     >
       {toastStateList.map((toastState) => {
@@ -35,8 +38,11 @@ const ToastContainer = ({ toastStateList, stack, direction }) => {
 };
 
 ToastContainer.propTypes = {
-  stack: PropTypes.oneOf(["start", "end"]),
-  direction: PropTypes.oneOf(["row", "column"]),
+  justify: PropTypes.oneOf(["flex-start", "flex-end", "center"]),
+  direction: PropTypes.oneOf(["row", "column", "column-reverse"]),
+  side: PropTypes.oneOf(["left", "right"]),
+  head: PropTypes.oneOf(["top", "bottom"]),
+  center: PropTypes.oneOf(["top", "bottom"]),
 };
 
 export default ToastContainer;
