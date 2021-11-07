@@ -20,12 +20,21 @@ export const useToast = () => {
     setToastStateList((oldToastStateList) => {
       return [
         ...oldToastStateList,
-        { messageContent, messageType, displayTime, toastId, showIcon },
+        {
+          messageContent,
+          messageType,
+          displayTime,
+          toastId,
+          showIcon,
+          close: () => {
+            closeToast(toastId);
+          },
+        },
       ];
     });
 
     setToastId(toastId + 1);
   };
 
-  return { showToast, closeToast, toastStateList };
+  return { showToast, toastStateList };
 };

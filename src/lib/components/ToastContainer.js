@@ -1,7 +1,7 @@
 import React from "react";
 import Toast from "./Toast";
 
-const ToastContainer = ({ toastStateList, closeToast }) => {
+const ToastContainer = ({ toastStateList }) => {
   return (
     <div className="toast-container">
       {toastStateList.map((toastState, index) => {
@@ -10,7 +10,7 @@ const ToastContainer = ({ toastStateList, closeToast }) => {
             key={toastState.toastId}
             messageContent={toastState.messageContent}
             messageType={toastState.messageType}
-            close={() => closeToast(toastState.toastId)}
+            close={toastState.close}
             displayTime={toastState.displayTime}
             showIcon={toastState.showIcon}
           />

@@ -3,10 +3,10 @@ import { useToast } from "./lib/components/useToast";
 import ToastContainer from "./lib/components/ToastContainer";
 
 function App() {
-  const { toastStateList, showToast, closeToast } = useToast();
+  const { toastStateList, showToast } = useToast();
   return (
     <div>
-      <ToastContainer toastStateList={toastStateList} closeToast={closeToast} />
+      <ToastContainer toastStateList={toastStateList} />
       <button onClick={() => showToast("Error toast message.", "error", 3000)}>
         Error toast
       </button>
