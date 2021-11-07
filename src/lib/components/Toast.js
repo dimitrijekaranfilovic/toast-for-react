@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./toast.css";
 
 const Toast = ({
   messageContent,
