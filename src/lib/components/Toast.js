@@ -8,15 +8,6 @@ const Toast = ({
   messageType = "info",
 }) => {
   useEffect(() => {
-    let timer = setTimeout(() => {
-      close();
-    }, displayTime);
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [close, displayTime]);
-
-  useEffect(() => {
     setTimeout(close, displayTime);
   }, [close, displayTime]);
 
@@ -26,9 +17,6 @@ const Toast = ({
       <span className={`toast-icon ${messageType}-toast-icon`}></span>
       &nbsp;
       <h6>{messageContent}</h6>
-      {/* <p className="toast-close" onClick={close}>
-        &times;
-      </p> */}
     </div>
   );
 };

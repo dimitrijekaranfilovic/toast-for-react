@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 2.5px;
+  margin-bottom: 2.5px;
   margin-right: 2px;
   color: white;
   padding: 10px;
@@ -16,27 +16,21 @@
   width: 250px;
 }
 
-.toast-close {
-  cursor: pointer;
-  position: relative;
-  /* margin-top: 0; */
-  /* margin-right: 0; */
-  /* right: 0; */
-}
-
 .toast-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
   height: 100%;
   overflow-y: auto;
+  position: fixed;
   bottom: 0;
   right: 0;
   z-index: 100;
   margin-top: 2rem;
-  position: fixed;
 }
 
 .toast-icon {
   font-size: 40px;
-  font-weight: bolder;
 }
 
 .success-toast-icon::after {
