@@ -11,7 +11,9 @@ function App() {
         Error toast
       </button>
       <button
-        onClick={() => showToast("Success toast message.", "success", 3000)}
+        onClick={() =>
+          showToast("Success toast message.", "success", 3000, false)
+        }
       >
         Sucess toast
       </button>

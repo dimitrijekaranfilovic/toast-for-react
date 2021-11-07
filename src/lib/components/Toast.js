@@ -4,8 +4,9 @@ import "./toast.css";
 const Toast = ({
   messageContent,
   close,
-  displayTime,
+  displayTime = 5000,
   messageType = "info",
+  showIcon = true,
 }) => {
   useEffect(() => {
     setTimeout(close, displayTime);
@@ -14,7 +15,9 @@ const Toast = ({
   const toastClass = `toast ${messageType}-toast`;
   return (
     <div className={toastClass} onClick={close}>
-      <span className={`toast-icon ${messageType}-toast-icon`}></span>
+      {showIcon && (
+        <span className={`toast-icon ${messageType}-toast-icon`}></span>
+      )}
       &nbsp;
       <h6>{messageContent}</h6>
     </div>

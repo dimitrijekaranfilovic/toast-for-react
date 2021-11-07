@@ -12,6 +12,7 @@ const ToastContainer = ({ toastStateList, closeToast }) => {
             messageType={toastState.messageType}
             close={() => closeToast(toastState.toastId)}
             displayTime={toastState.displayTime}
+            showIcon={toastState.showIcon}
           />
         );
       })}

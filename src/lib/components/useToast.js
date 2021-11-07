@@ -11,11 +11,16 @@ export const useToast = () => {
     });
   };
 
-  const showToast = (messageContent, messageType, displayTime = 5000) => {
+  const showToast = (
+    messageContent,
+    messageType,
+    displayTime = 5000,
+    showIcon = true
+  ) => {
     setToastStateList((oldToastStateList) => {
       return [
         ...oldToastStateList,
-        { messageContent, messageType, displayTime, toastId },
+        { messageContent, messageType, displayTime, toastId, showIcon },
       ];
     });
 
