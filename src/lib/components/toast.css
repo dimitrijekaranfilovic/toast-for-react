@@ -7,20 +7,29 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 2px;
+  margin-top: 2.5px;
+  margin-right: 2px;
   color: white;
   padding: 10px;
   height: 40px;
   font-size: 24px;
+  width: 250px;
+}
+
+.toast-close {
+  cursor: pointer;
+  position: relative;
+  /* margin-top: 0; */
+  /* margin-right: 0; */
+  /* right: 0; */
 }
 
 .toast-container {
   height: 100%;
   overflow-y: auto;
-  padding: 2px;
   bottom: 0;
   right: 0;
-  z-index: 2;
+  z-index: 100;
   margin-top: 2rem;
   position: fixed;
 }

@@ -7,10 +7,10 @@ const ToastContainer = ({ toastStateList, closeToast }) => {
       {toastStateList.map((toastState, index) => {
         return (
           <Toast
-            key={index}
+            key={toastState.toastId}
             messageContent={toastState.messageContent}
             messageType={toastState.messageType}
-            close={() => closeToast(index)}
+            close={() => closeToast(toastState.toastId)}
             displayTime={toastState.displayTime}
           />
         );
