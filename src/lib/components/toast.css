@@ -8,6 +8,7 @@
   align-items: center;
   position: relative;
   margin-bottom: 2.5px;
+  margin-top: 2.5px;
   margin-right: 2px;
   color: white;
   padding: 10px;
@@ -17,14 +18,14 @@
 }
 
 .toast-container {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  height: 100%;
-  overflow-y: auto;
-  position: fixed;
+  /*four properties below should be susceptible to user configuration*/
   bottom: 0;
   right: 0;
+
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+
   z-index: 100;
   margin-top: 2rem;
 }
