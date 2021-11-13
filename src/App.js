@@ -12,7 +12,11 @@ function App() {
       </button>
       <button
         onClick={() =>
-          showToast("Success toast message.", "success", 3000, false)
+          showToast(
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, consectetur quos praesentium itaque architecto veritatis dignissimos dolorum tempora culpa atque?",
+            "success",
+            5000
+          )
         }
       >
         Sucess toast
