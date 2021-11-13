@@ -13,7 +13,7 @@ export const useToast = () => {
 
   const showToast = (
     messageContent,
-    messageType,
+    messageType = "info",
     displayTime = 5000,
     showIcon = true
   ) => {

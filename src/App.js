@@ -13,9 +13,7 @@ function App() {
       <button
         onClick={() =>
           showToast(
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, consectetur quos praesentium itaque architecto veritatis dignissimos dolorum tempora culpa atque?",
-            "success",
-            5000
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, consectetur quos praesentium itaque architecto veritatis dignissimos dolorum tempora culpa atque?"
           )
         }
       >
