@@ -7,9 +7,7 @@ Another toast for react. Simple side project of mine.
 In your `App.js` file, simply import
 `ToasContainer` component and `useToast` hook, like this:
 
-- `import { useToast } from "toast-for-react"; `
-
-- `import ToastContainer from "toast-for-react"; `
+- `import {ToastContainer, useToast } from "toast-for-react"; `
 
 In your `App` component, call the `useToast` hook, like this:
 
