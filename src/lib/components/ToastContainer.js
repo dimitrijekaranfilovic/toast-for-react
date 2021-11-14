@@ -42,7 +42,6 @@ ToastContainer.propTypes = {
   direction: PropTypes.oneOf(["row", "column", "column-reverse"]),
   side: PropTypes.oneOf(["left", "right"]),
   head: PropTypes.oneOf(["top", "bottom"]),
-  center: PropTypes.oneOf(["top", "bottom"]),
 };
 
 export default ToastContainer;
