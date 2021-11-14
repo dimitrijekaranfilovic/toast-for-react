@@ -1,7 +1,27 @@
 {
   "name": "toast-for-react",
   "version": "1.0.0",
-  "private": true,
+  "description": "Toast component for react",
+  "author": {
+    "name": "Dimitrije Karanfilovic"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "toast",
+    "component"
+  ],
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitrijekaranfilovic/toast-for-react.git"
+  },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.15.0",
