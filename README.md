@@ -1,6 +1,7 @@
 # toast-for-react
 
 
+
 Another toast for react. Simple side project of mine.
 
 ## Usage
