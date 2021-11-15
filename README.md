@@ -28,7 +28,9 @@ you can add `ToastContainer` to your `App` component. It is recommended that you
 
 The toast looks like this:
 
-![picture](/resources/toast.png)
+![picture](https://raw.githubusercontent.com/dimitrijekaranfilovic/toast-for-react/master/resources/toast.png)
+
+_If you are reading this on npm site and don't see the image, visit the github repo link._
 
 Additional props will be explained below.
 
