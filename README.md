@@ -1,10 +1,12 @@
 # toast-for-react
 
-
-
 Another toast for react. Simple side project of mine.
 
 ## Usage
+
+First, you install the package by running this command in your terminal
+
+`npm install toast-for-react`
 
 In your `App.js` file, simply import
 `ToasContainer` component and `useToast` hook, like this:
@@ -23,6 +25,10 @@ After you've called the `useToast` hook,
 you can add `ToastContainer` to your `App` component. It is recommended that you put it at its top (otherwise, behaviour may or may not be unpredictable). Minimal setup looks like this:
 
 `<ToastContainer toastStateList={toastStateList} /> `
+
+The toast looks like this:
+
+![picture](/resources/toast.png)
 
 Additional props will be explained below.
 
